@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Add a gradient background */
+body {
+  background: linear-gradient(135deg, #3498db, #e74c3c);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 30px;
+  background-color: #eef27d;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #000000; /* Change heading color to white */
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  margin-bottom: 30px;
+}
+
+.label {
+  font-size: 18px;
+  color: #000000; /* Change label color to white */
+  margin-bottom: 10px;
+}
+
+.input {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.2s ease-in-out;
+  background-color: #fff; /* Add a white background color */
+}
+
+.input:focus {
+  border-color: #330909;
+}
+
+.error-message {
+  color: #e74c3c;
+  font-size: 14px;
+  display: block;
+}
+
+.button {
+  padding: 15px 25px;
+  font-size: 18px;
+  background-color: #220000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.button:hover {
+  background-color: #3e1010;
+}
+
+/* Responsive styles for mobile devices */
+@media screen and (max-width: 480px) {
+  .container {
+    max-width: 90%;
+  }
+}
